@@ -44,7 +44,13 @@ main{
   box-shadow:0 14px 30px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.12);
 }
 
-h1, h2{
+h1{
+  color:#0b1220;              
+  text-align:center;
+  font-size:clamp(26px,3vw,38px);
+  margin:0 0 14px;
+}
+h2{
   color:#0b1220;              
   text-align:center;
   font-size:clamp(26px,3vw,38px);
