@@ -1,0 +1,121 @@
+:root {
+  --bg: #0b0c10;
+  --card: #14161a;
+  --text: #e8eef6;
+  --sub: #aeb7c2;
+  --brand: #5bb1ff;
+  --radius: 14px;
+  --shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+  --maxw: 840px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+header {
+  background: rgba(10, 12, 15, 0.8);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(6px);
+  padding: 12px 0;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+nav a {
+  color: var(--text);
+  text-decoration: none;
+  padding: 8px 14px;
+  border-radius: 999px;
+  transition: 0.2s;
+  font-weight: 500;
+}
+
+nav a:hover {
+  background: rgba(255, 255, 255, 0.08);
+  color: var(--brand);
+}
+
+main,
+aside {
+  background: var(--card);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 24px;
+  margin: 24px auto;
+  max-width: 840px;
+  width: 90%;
+}
+
+h1 {
+  text-align: center;
+  font-size: clamp(26px, 3vw, 36px);
+  margin-bottom: 16px;
+}
+
+h2 {
+  text-align: center;
+  font-size: clamp(20px, 2vw, 26px);
+  margin-bottom: 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding-bottom: 6px;
+}
+
+p {
+  padding: 0;
+  color: var(--sub);
+}
+
+main img{
+    width: 150px;
+    height: auto;
+}
+
+img {
+  display: block;
+  margin: 16px auto;
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+  max-width: 100%;
+  height: auto;
+  width: 200px;
+}
+
+footer {
+  text-align: center;
+  color: var(--sub);
+  font-size: 0.9rem;
+  /* margin: 40px 0 20px; */
+  margin-top: 15px;
+  border-top: 1px solid #000;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  main,
+  aside {
+    padding: 18px;
+    width: 95%;
+  }
+}
