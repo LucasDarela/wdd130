@@ -37,7 +37,7 @@ nav a{
   display:block;              
   text-decoration:none;
   font-weight:600;
-  border-radius: 20px;
+  border-radius: 100px;
   transition:.2s ease;
   border:1px solid transparent;
 }
@@ -104,7 +104,7 @@ aside{
 
 aside h2{
   position: absolute;
-  bottom: 200px;
+  top: 50px;
   left: 43%;
   color: #ffff;
   margin:0 0 10px;
@@ -144,11 +144,28 @@ footer{
   margin: 1rem;
   border: 1px solid rgb(0 0 0 / 10%);
   padding: 1rem;
+  padding-left: 30px;
   background-color: #ddd;
-  color: #000;
+  color: var(--primary-color);
+  border-radius: 10px;
 }
 
-/* aside {
-  width: 20em;
-  text-align: center;
-} */
+.box li a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.box li a:hover {
+  color: var(--primary-color);
+  text-decoration: underline;
+}
+ul {
+  list-style-type: none; /* remove bolinha */
+}
+
+li::before {
+  content: "→ "; /* ou "⇒", "➤", "➡", conforme o estilo */
+  color: var(--primary-color);
+  font-weight: bold;
+  margin-right: 6px;
+}
