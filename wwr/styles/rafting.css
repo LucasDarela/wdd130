@@ -147,6 +147,7 @@ article {
 .rafting-inst-img img {
     padding: 0;
     margin-bottom: 16px;
+    width: 200px;
 }
 
 article p {
@@ -179,10 +180,6 @@ footer{
     background-color: var(--color-primary);
     color: var(--color-surface);
     font-size: small;
-}
-
-.socialmedia{
-
 }
 
 .socialmedia img{
