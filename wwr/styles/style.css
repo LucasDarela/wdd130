@@ -60,7 +60,7 @@ body {
 
 /* ======== NavBar ======== */
 
-nav{
+.navbar{
   background-color:var(--color-primary);
   color: var(--color-surface);
   padding:16px;               
@@ -72,7 +72,7 @@ nav{
   backdrop-filter: saturate(1.2) blur(6px);
 }
 
-nav a{
+.navbar a{
   color: var(--secondary-color);              
   padding:10px 14px;          
   display:block;              
@@ -82,13 +82,13 @@ nav a{
   transition:.2s ease;
   border:1px solid transparent;
 }
-nav a:hover{
+.navbar a:hover{
   background:rgba(255,255,255,.07);
   border-color:rgba(255,255,255,.12);
   transform:translateY(-1px);
 }
 
-nav img{
+.navbar img{
     position: absolute;
     left: 10%;
     top: 0%;
@@ -132,36 +132,43 @@ main{
   border-radius: 10px;
 }
 
-@media (max-width: 768px) {
-
-  .hero-img {
-    margin-top: 0;
-    width: 100%;
-  }
-}
-
 /* ======= Article ==== */
-article{
+article {
     margin-top: -100px;
-    justify-content: center;
-    justify-items: center;
     display: flex;
+    flex-direction: column;  /* IMPORTANTE */
+    align-items: center;     /* Centraliza tudo */
+    gap: 12px;
     margin-bottom: 100px;
+    max-width: 840px;
+    margin-inline: auto;
 }
 
-article img{
-    padding: 0px 30px 0px 0px;
+.rafting-inst-img img {
+    padding: 0;
+    margin-bottom: 16px;
 }
 
-article p{
-        max-width: 840px;
+article p {
+    width: 100%;
+    text-align: left;
+    line-height: 1.5;
 }
 
 /* ====== Section ====== */
-section{
-    justify-content: center;
-    justify-items: center;
-    padding: 50px 10px 50px 0px;
+section {
+  max-width: 840px;
+  margin: 0 auto;
+  padding: 50px 10px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* alinha horizontal */
+  justify-content: center; /* alinha vertical */
+}
+
+section h2{
+  margin-bottom: 15px;
 }
 
 /* ======= Footer ====== */
@@ -172,4 +179,18 @@ footer{
     background-color: var(--color-primary);
     color: var(--color-surface);
     font-size: small;
+}
+
+.socialmedia{
+
+}
+
+.socialmedia img{
+width: 20px;
+margin: 20px 10px 0px 10px;
+  transition: opacity 0.2s ease;
+}
+
+.socialmedia img:hover{
+  opacity: 5.8;
 }
