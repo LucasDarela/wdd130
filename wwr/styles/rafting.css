@@ -3,13 +3,8 @@
     --color-bg: #fff;
     --color-surface: #ffffff;
     --color-text: #0f1724;
-    --color-muted: #64748b;
     --color-primary: #10394F;
-    --color-accent: #d4b05c;
-
     --font-sans: Inter, system-ui, -apple-system, "Segoe UI", Roboto, Arial;
-
-    --shadow-md: 0 8px 50px rgba(15,23,42,0.08);
 }
 
 /* ============ RESET ============ */
@@ -101,21 +96,21 @@ nav a:hover {
   box-sizing: border-box;
 }
 
-.hero-article p {
+.hero article p {
   margin: 0;
   line-height: 1.5;
 }
 
-.hero-article img {
+.hero article img {
   float: right;
   width: 180px;
   height: auto;
   margin-left: 16px;
-  border: 6px solid #d4b05c;
+  border: 6px solid var(--color-accent);
   box-sizing: border-box;
 }
 
-.hero-article::after {
+.hero article::after {
   content: "";
   display: block;
   clear: both;
