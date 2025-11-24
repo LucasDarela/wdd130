@@ -164,6 +164,11 @@ nav a:hover {
   color: var(--color-primary);
 }
 
+.adventures h2 {
+  grid-column: 1 / -1;   
+  text-align: center;    
+  margin-bottom: 10px;  
+}
 /* ============ FOOTER ============ */
 footer {
   padding: 40px 20px;
